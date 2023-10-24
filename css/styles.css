@@ -1,29 +1,47 @@
-body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    margin: 0;
-    padding: 0;
-}
-
-header, nav ul, footer {
+.top-banner {
     display: flex;
     justify-content: space-between;
-    padding: 20px;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #f5f5f5;
+    border-bottom: 1px solid #e0e0e0;
 }
 
-nav ul {
-    list-style-type: none;
-}
-
-nav ul li {
-    margin: 0 10px;
-}
-
-nav ul li a {
+.navigation-links a {
+    margin-right: 20px;
     text-decoration: none;
-    color: black;
+    color: #333;
 }
 
-section {
+.navigation-links a:hover {
+    text-decoration: underline;
+}
+
+.profile-picture img {
+    width: 50px; /* Adjust size as needed */
+    height: 50px;
+    border-radius: 50%; /* Makes the image round */
+}
+
+.main-content {
     padding: 20px;
+    min-height: 400px; /* Or whatever height you want */
+}
+
+.social-media-links {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    display: flex;
+    gap: 10px; /* Space between icons */
+}
+
+.social-media-links img {
+    width: 30px; /* Adjust size as needed */
+    height: 30px;
+    transition: 0.3s;
+}
+
+.social-media-links img:hover {
+    opacity: 0.7;
 }
